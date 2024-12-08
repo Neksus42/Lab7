@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        daysRepository = DaysRepository.getInstance();
+        daysRepository = DaysRepository.getInstance(this);
         recyclerView = findViewById(R.id.recycler_days);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

@@ -26,7 +26,7 @@ public class TasksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tasks);
 
         dayId = getIntent().getIntExtra("day_id", -1);
-        daysRepository = DaysRepository.getInstance();
+        daysRepository = DaysRepository.getInstance(this);
         currentDay = daysRepository.getDayById(dayId);
 
         recyclerView = findViewById(R.id.recycler_tasks);
@@ -45,6 +45,7 @@ public class TasksActivity extends AppCompatActivity {
                 currentDay.getTasks().add(new TaskItem(newTaskText, false));
                 tasksAdapter.notifyDataSetChanged();
                 editTextNewTask.setText("");
+                daysRepository.save();
             }
         });
 
