@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Lab7</string>
+    <string name="Background_text_onTasls">Новая пометка</string>
+    <string name="Button_add_task">Добавить</string>
+    <string name="Button_done_text">Готово</string>
+    <string name="Button_completed_text">Выполнено</string>
+    <string name="tasktext">Задача</string>
 </resources>

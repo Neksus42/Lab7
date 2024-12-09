@@ -9,13 +9,13 @@
         android:id="@+id/edit_new_task"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Новая пометка"/>
+        android:hint="@string/Background_text_onTasls"/>
 
     <Button
         android:id="@+id/button_add_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добавить"/>
+        android:text="@string/Button_add_task"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_tasks"
@@ -33,13 +33,13 @@
             android:id="@+id/button_done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Готово"/>
+            android:text="@string/Button_done_text"/>
 
         <Button
             android:id="@+id/button_completed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Выполнено"/>
+            android:text="@string/Button_completed_text"/>
     </LinearLayout>
 
 </LinearLayout>

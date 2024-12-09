@@ -4,4 +4,4 @@
     android:id="@+id/checkbox_task"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Задача"/>
+    android:text="@string/tasktext"/>
